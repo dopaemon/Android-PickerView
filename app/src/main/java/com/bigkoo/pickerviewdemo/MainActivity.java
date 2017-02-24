@@ -79,8 +79,8 @@ public class MainActivity extends Activity implements View.OnClickListener{
                 .setCancelColor(Color.BLUE)
                 .setRange(calendar.get(Calendar.YEAR) - 20, calendar.get(Calendar.YEAR) + 20)//default 1900-2100 years *//*
                 .setDate(new Date())// default system*/
-                .setTitleBgColor(0xFF333333)//标题背景颜色 Night mode
-                .setBgColor(0xFF000000)//滚轮背景颜色 Night mode
+                .setTitleBgColor(0xFF666666)//标题背景颜色 Night mode
+                .setBgColor(0xFF444444)//滚轮背景颜色 Night mode
                 .setLabel("年","月","日","时","分","秒")
                 .build();
     }
@@ -225,9 +225,9 @@ public class MainActivity extends Activity implements View.OnClickListener{
                 .setLinkage(false)//default true
                 .setLabels("省", "市", "区")//设置选择的三级单位
                 .setCyclic(false, false, false)//循环与
-                .setOutSideCancelable(false)//点击外部dismiss, default true*/
-                /*.setTitleBgColor(0xFF333333)//标题背景颜色 Night mode
-                .setBgColor(0xFF000000)//滚轮背景颜色 Night mode*/
+                .setOutSideCancelable(false)//点击外部dismiss, default true
+                .setTitleBgColor(0xFF666666)//标题背景颜色 Night mode
+                .setBgColor(0xFF444444)//滚轮背景颜色 Night mode*/
                 .setSubCalSize(18)
                 .setContentTextSize(20)
                 .setSelectOptions(0,1,2)  //设置默认选中项
