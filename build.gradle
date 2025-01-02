@@ -5,9 +5,10 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        // Sử dụng phiên bản Gradle plugin phù hợp với dự án
-        classpath 'com.android.tools.build:gradle:3.6.4'
+        classpath 'com.android.tools.build:gradle:2.2.3'
         classpath 'com.github.dcendents:android-maven-gradle-plugin:1.4.1'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
     }
 }
 
@@ -17,7 +18,16 @@ allprojects {
     }
 }
 
-// Task dọn dẹp build directory
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.3'
+        runtimeOnly 'com.novoda:bintray-release:0.9.2'
+    }
+}
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
